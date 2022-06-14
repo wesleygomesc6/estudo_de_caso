@@ -1,0 +1,93 @@
+@import '../variaveis.scss';
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+
+  @media (max-width: 960px) {
+    width: 90%;
+  }
+
+  .content-form {
+    width: 100%;
+    padding-top: 5rem;
+
+    h2 {
+      text-align: center;
+    }
+
+    .campos {
+      padding: 0.5rem;
+
+      .error {
+        border: 2px solid $color-error;
+      }
+
+      .mensagem {
+        color: $color-warning;
+      }
+
+      .aviso {
+        display: none;
+      }
+
+      label {
+        display: flex;
+        padding: 1rem 0.2rem;
+      }
+
+      input {
+        display: flex;
+        min-height: 2.5rem;
+        box-sizing: border-box;
+        width: 100%;
+      }
+    }
+
+    .botoes {
+      padding: 0.5rem;
+
+      button {
+        min-height: 2.5rem;
+        width: 100%;
+        margin: 0.5rem 0;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          margin-right: 1rem;
+        }
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+
+      .submit {
+        background-color: $color-primary;
+      }
+
+      .cadastro {
+        background-color: $color-info;
+      }
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      margin-top: 3rem;
+
+      img {
+        max-width: 150px;
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+@import '../variaveis.scss';
+
+main {
+    .conteudo {
+        margin-left: 20vw;
+        padding: 1rem;
+
+        @media (max-width: 600px) {
+            margin-left: 30vw;
+        }
+    }
+}
+
+.header-table {
+
+    .acoes {
+        display: flex;
+        justify-content: end;
+
+        .input-icons {
+            display: flex;
+            align-items: center;
+
+            .icon {
+                position: absolute;
+                margin-left: 0.7rem;
+            }
+
+            input {
+                display: flex;
+                min-height: 2.5rem;
+                box-sizing: border-box;
+                width: 100%;
+                border-radius: 50px;
+                padding-left: 2.5rem;
+            }
+        }
+
+        button {
+            min-height: 2.5rem;
+            width: 100%;
+            margin: 0.5rem;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 50px;
+            align-items: center;
+            display: flex;
+            max-width: 200px;
+
+            @media (max-width: 600px) {
+                width: 50px;
+            }
+
+            svg {
+                margin: 0.4rem
+            }
+
+            span {
+                @media (max-width: 600px) {
+                    display: none;
+                }
+
+                margin: 0.4rem
+            }
+        }
+
+        .cadastro {
+            background-color: $color-primary;
+        }
+
+    }
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+    tr {
+        border-bottom: 1px solid $color-info;
+    }
+
+    td,
+    th {
+        padding: 8px;
+        text-align: center;
+    }
+
+    td.ativo {
+        color: $color-primary;
+    }
+
+    td.inativo {
+        color: $color-error;
+    }
+
+    .opcoes {
+        justify-content: space-between;
+        display: flex;
+
+        svg {
+            margin: 0px 0.5rem;
+            cursor: pointer;
+        }
+    }
+
+    tr:hover {
+        background-color: $color-back;
+    }
+}

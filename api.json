@@ -1,0 +1,20 @@
+{
+  "usuarios": [
+    {
+      "nome": "Wesley Gomes",
+      "email": "admin@email.com",
+      "senha": "admin123",
+      "permissao": "Administrador",
+      "status": "Ativo",
+      "id": 1
+    },
+    {
+      "nome": "John Silva",
+      "email": "john@exemplo.com",
+      "senha": "12345678",
+      "permissao": "Usuario",
+      "status": "Inativo",
+      "id": 2
+    }
+  ]
+}
